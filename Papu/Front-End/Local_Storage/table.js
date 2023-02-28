@@ -1,0 +1,3 @@
+class student_table{
+    
+}
