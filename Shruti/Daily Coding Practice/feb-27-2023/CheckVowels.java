@@ -1,4 +1,4 @@
-public class Vowels {
+public class CheckVowels {
     public static void main(String[] args) {
       
       // check whether a string contains a vowel or not
