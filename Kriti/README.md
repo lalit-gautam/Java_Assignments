@@ -5,21 +5,18 @@ Write a program to input month number and print month Name.
 
 1_March_2023
 -------------------------------
-Print These Pattern
-* * * * * * 
+
+{
+ * * * * * 
   * * * * 
    * * * 
     * * 
-     *
-
-*****
- ****
-  ***
-   **
-    *
+     * 
+}
+=======
 
 
-//1
-//32
-//456
-//10987
+1\n
+3 2\n
+4 5 6\n
+10 9 8 7\n
