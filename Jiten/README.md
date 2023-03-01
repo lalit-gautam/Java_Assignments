@@ -1,0 +1,44 @@
+22-Feb-23
+1. Convert Min. to hours
+2. Find body Mass Index
+
+23-feb-23
+1. Sum Of al elements in Array
+2. Largest and Smallest Element in a Array
+
+24-Feb-23
+1. Fibanacci Series
+2. Perfect Number
+
+25-Feb-23
+1. Pallindrome Number
+2. Sum of all Digits of a Number
+
+26-Feb-23
+1. Extract last Two Digits Of a Given Year
+2. Sum Of all Digits of a number Using Recursion
+
+27-Feb-23
+1. Average Of a Array Elements
+2. Common Elements Of Two Array
+
+28-Feb-23
+1. Check Input Character Is Alphabet Or Not
+2. Write a program to check whether the triangle is equilateral, isosceles or scalene triangle.
+
+01-Mar-23
+1.   * * * * * 
+     * * * * 
+     * * * 
+     * * 
+     *
+
+2.   * 
+     * * 
+     * * * 
+     * * * * 
+     * * * * * 
+     * * * * 
+     * * * 
+     * * 
+     *

@@ -1,4 +1,4 @@
-package sec_day;
+package Assignment23Feb23;
 
 import java.util.Scanner;
 

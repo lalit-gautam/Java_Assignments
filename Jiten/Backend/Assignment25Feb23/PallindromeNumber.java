@@ -1,4 +1,4 @@
-package java_project;
+package Assignment25Feb23;
 
 import java.util.Scanner;
 

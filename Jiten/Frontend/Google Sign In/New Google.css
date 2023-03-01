@@ -1,0 +1,28 @@
+.box {
+	width: 100px;
+	height: 100px;
+	border: 2px solid black;
+	text-align: center;
+	line-height: 100px;
+	cursor: pointer;
+  }
+  
+  .box:hover {
+	border-color: red;
+  }
+  
+  .box.active {
+	border-color: green;
+  }
+  
+  .box.active:before {
+	content: "Hello World!";
+	position: absolute;
+	top: -25px;
+	left: -25px;
+	background-color: green;
+	color: white;
+	padding: 5px;
+	border-radius: 5px;
+  }
+  
