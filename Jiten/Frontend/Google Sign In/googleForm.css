@@ -1,0 +1,18 @@
+
+.header{ text-align: center;
+}
+#first{ text-align: center;}
+#span1{ color: rgb(47, 47, 234); }
+#span2{ color: rgb(255, 77, 71); margin: -10px }
+#span3{ color: rgb(255, 217, 0); margin-left: 1px; }
+#span5{ color: rgb(5, 172, 5); margin: -10px; }
+#span4{ color: rgb(47, 47, 234);margin-left: -9px; }
+#span6{ color: rgb(255, 77, 71);}
+#forget{ color: blue; font-size: small; margin-top: 10px;}
+#learnmore{ color: blue;}
+form{ 
+    font-family: sans-serif;
+    border: 1px solid silver;
+    border-radius: 10px;
+    margin: 50px 380px;
+}

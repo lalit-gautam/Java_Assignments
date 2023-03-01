@@ -4,7 +4,7 @@ import java.util.Scanner;
 
 //Write a program to check whether the triangle is equilateral, isosceles or scalene triangle.
 
-public class ddf {
+public class TypeOfTriangle {
 	public static void main(String[] args) {
 		Scanner scan = new Scanner(System.in);
 		System.out.println("Enter a first line of triangle.");
