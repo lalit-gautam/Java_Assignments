@@ -1,6 +1,9 @@
 
 import java.util.Arrays;
 
+//A binary array is an array consisting of only Os and 1s.
+//You are given a binary array "arr" of size 'N'. Your task is to sort the given array and return this array after sorting.
+
 public class BinaryArrSort {
     public static void main(String[] args) {
         int[] arr = {0, 1, 0, 1, 1, 0, 0};
