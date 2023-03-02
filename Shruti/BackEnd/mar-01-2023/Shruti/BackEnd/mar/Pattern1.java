@@ -5,6 +5,8 @@ public class Pattern1 {
         numInc(1, 1, 1 , noOfrows);
 
     }
+    // r = row
+    // c = column
     static void numInc(int r, int c, int i , int no){
        if( r > no ){
             return;
