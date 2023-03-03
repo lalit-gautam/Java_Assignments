@@ -1,3 +1,4 @@
+
 public class Pattern1 {
     public static void main(String[] args) {
         int noOfrows = 4;
@@ -5,8 +6,6 @@ public class Pattern1 {
         numInc(1, 1, 1 , noOfrows);
 
     }
-    // r = row
-    // c = column
     static void numInc(int r, int c, int i , int no){
        if( r > no ){
             return;
@@ -38,4 +37,3 @@ public class Pattern1 {
     
     
 }
-

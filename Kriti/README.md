@@ -26,3 +26,10 @@ Write a program to input month number and print month Name.
 13 14 15 16
 5 6 7 8
 ```
+
+2_March_2023
+-------------------
+Find GCD of given 2 numbers
+
+Find The Maximum element count in a given array
+

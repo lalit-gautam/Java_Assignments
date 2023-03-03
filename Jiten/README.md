@@ -42,3 +42,18 @@
      * * * 
      * * 
      *
+
+02-mar-23
+1. Searching an element in an array.
+2. Find the occurance of elements in an array.
+
+03-mar-23
+1.   1 
+     2 3 
+     6 5 4 
+     7 8 9 10 
+     15 14 13 12 11 
+     16 17 18 19 20 21 
+     28 27 26 25 24 23 22 
+
+2.
