@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -8,10 +9,11 @@
     <link rel="stylesheet" href="./style.css">
     <title>Student Registration form</title>
 </head>
+
 <body>
     <div class="main-parent">
         <div class="form-wrap">
-            <form action="">
+            <form action="" onsubmit="return false">
                 <h1><span>Student </span>Form</h1>
                 <div class="single-input">Id:
                     <input id="sid" type="text" placeholder="Enter id" required>
@@ -29,11 +31,16 @@
                     <input id="shubbies" type="text" placeholder="Hubbies" required>
                 </div>
                 <div class="submit-button">
-                    <button class="button" onclick="clickFunction()">Submit</button>
+                    <button class="sbutton" onclick="clickFunction()">Submit</button>
+                </div><br>
+                <div class="result-table">
+                    <button class="rbutton" onclick="window.location='./table.html'">Show Table</button>
                 </div>
             </form>
         </div>
     </div>
-    <script src="table.js"></script>
+    <script src="./table.js"></script>
+    <script src="./result.js"></script>
 </body>
+
 </html>
