@@ -19,20 +19,21 @@ public class Pattern_4 {
 				}
 				midRowPrint = print * 2 -1;  //Because value of print already increased to 5. so I take this statement.
 			}
-			else if(i == 2 || i < row){
-				for(int j = 1; j <= row; j++) {
-					System.out.print(midRowPrint+" ");
-					midRowPrint++;
-				}
-			}
-			else {
+			else if(i == row){
 				int lastRowPrint = print;
 				for(int j = 1; j <= row ; j++) {
 					System.out.print(lastRowPrint+" ");
 					lastRowPrint ++;
 				}
 			}
+			else {
+				for(int j = 1; j <= row; j++) {
+					System.out.print(midRowPrint+" ");
+					midRowPrint++;
+				}
+			}
 			System.out.println();
 		}
 	}
 }
+
