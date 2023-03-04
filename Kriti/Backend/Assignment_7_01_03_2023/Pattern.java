@@ -7,11 +7,12 @@
 
 class Pattern{
     public static void main(String[] args){
-        reverseTriangle(10);
-        printTringle(0, 1 , 4);
-        printPattern(8 , 2 , 1 , 4);
+        // reverseTriangle(10);
+        // printTringle(0, 1 , 4);
+        printPattern(5 , 25);
     }
 
+    
 
 
 
@@ -58,8 +59,15 @@ class Pattern{
         }
         int num1 = num;
         num = num+start;
-        for(int i=num ; i>num1;i--){
-            System.out.print(i + " ");
+        if(rows%2!=0){
+            for(int i=num ; i>num1;i--){
+                System.out.print(i + " ");
+            }
+        }
+        else{
+            for(int i=num1-1 ; i<num ; i++){
+                System.out.print(i + " ");
+            }
         }
         System.out.println();
         printTringle(num , start+1 , rows-1);

@@ -3,8 +3,6 @@ public class Pattern2 {
         int noOfrows = 4;
         pattern2(1, 1, 1, noOfrows);
     }
-    // r = row
-    // c = column
     static void pattern2(int r, int c , int i, int no){
         if( r > no ){
             return;
@@ -39,4 +37,5 @@ public class Pattern2 {
 
     }
 }
+
 
