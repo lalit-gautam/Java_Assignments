@@ -2,26 +2,23 @@ package PassTheGun;
 
 import java.util.Arrays;
 
+
 public class PassTheGun {
     public static void main(String[] args) {
-        Integer[] arr = {0,1,2,3,4,5,6,7,8,9};
-        Integer pointer = 0;
+        Integer[] arr = {0,1,2,3,4,5,6,7,8};
+        Integer pointer = 1;
 //        System.out.println(Arrays.toString(removeIndex(arr, 1)));
-        System.out.println(findTheAlive(arr , pointer));
+        System.out.println(findTheAliveNumber(arr , pointer+1));
     }
-    public static int findTheAlive(Integer[] arr , Integer pointer)
+    public static int findTheAliveNumber(Integer[] arr , Integer pointer)
     {
         while(arr.length>1){
-            pointer = pointer+1;
-//            System.out.println(Arrays.toString(arr));
-//            System.out.println(pointer +"  " +arr.length);
-            if(pointer >= arr.length){
-                arr= removeIndex(arr , (pointer)%2);
+            if(arr.length<=pointer){
+                pointer = pointer % arr.length;
             }
-            else{
-                arr = removeIndex(arr, pointer);
-            }
-
+            arr = removeIndex(arr , pointer);
+            pointer+=1;
+            System.out.println(Arrays.toString(arr));
         }
         return arr[0];
     }
@@ -35,8 +32,5 @@ public class PassTheGun {
         }
         return ans;
     }
-
-
-
 
 }
