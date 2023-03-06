@@ -8,17 +8,21 @@ public class PassTheGun {
         Integer[] arr = {0,1,2,3,4,5,6,7,8};
         Integer pointer = 1;
 //        System.out.println(Arrays.toString(removeIndex(arr, 1)));
-        System.out.println(findTheAliveNumber(arr , pointer+1));
+        System.out.println(findTheAlive(arr , pointer));
     }
     public static int findTheAliveNumber(Integer[] arr , Integer pointer)
     {
         while(arr.length>1){
-            if(arr.length<=pointer){
-                pointer = pointer % arr.length;
+            pointer = pointer+1;
+//            System.out.println(Arrays.toString(arr));
+//            System.out.println(pointer +"  " +arr.length);
+            if(pointer >= arr.length){
+                arr= removeIndex(arr , (pointer)%2);
             }
-            arr = removeIndex(arr , pointer);
-            pointer+=1;
-            System.out.println(Arrays.toString(arr));
+            else{
+                arr = removeIndex(arr, pointer);
+            }
+
         }
         return arr[0];
     }
