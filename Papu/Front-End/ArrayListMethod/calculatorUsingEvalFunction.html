@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <label for="input1">Enter the First number:</label>
+    <input type="text" id="input1"><br>
+    <label for="input2">Enter the First number:</label>
+    <input type="text" id="input2"><br>
+        <select id="op">
+          <option value="0">Select Operation</option>
+          <option value="Add">Addition</option>
+          <option value="sub">Substration</option>
+          <option value="multi">Multiplication</option>
+          <option value="div">Division</option>
+
+        </select>
+        <br>
+    <button id="answer" onclick="calculator()">Submit</button>
+    <h1 id="result"></h1>
+    <script>
+        function calculator()
+        {
+            let input1=parseFloat(document.getElementById("input1").value);
+            let input2=parseFloat(document.getElementById("input2").value);
+            //console.log(input1);
+            let operation=document.getElementById("op").value;
+            if(operation=="Add")
+            {
+                document.getElementById("result").innerHTML=eval("input1+input2")
+                console.log("the sum is::"+eval("input1+input2"));
+            }
+            else if(operation=="sub")
+            {
+                document.getElementById("result").innerHTML=eval("input1-input2")
+                console.log("the substration is::"+eval("input1-input2"));
+            }
+            else if(operation=="multi")
+            {
+                document.getElementById("result").innerHTML=eval("input1*input2")
+                console.log("the mulitiplication is::"+eval("input1*input2"));
+            }
+           else if(operation=="div")
+            {
+                document.getElementById("result").innerHTML=eval("input1/input2")
+                console.log("the division is::"+eval("input1+/input2"));
+            }
+            
+        }
+    </script>
+</body>
+</html>

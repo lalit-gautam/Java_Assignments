@@ -7,11 +7,12 @@
 
 class Pattern{
     public static void main(String[] args){
-        reverseTriangle(10);
-        printTringle(0, 1 , 4);
-        printPattern(8 , 2 , 1 , 4);
+        // reverseTriangle(10);
+        // printTringle(0, 1 , 4);
+        printPattern(5 , 25);
     }
 
+    
 
 
 
