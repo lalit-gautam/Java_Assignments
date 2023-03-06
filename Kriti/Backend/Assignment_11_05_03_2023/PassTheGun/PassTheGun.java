@@ -7,21 +7,22 @@ public class PassTheGun {
         Integer[] arr = {0,1,2,3,4,5,6,7,8,9};
         Integer pointer = 0;
 //        System.out.println(Arrays.toString(removeIndex(arr, 1)));
-        System.out.println(findTheAlive(arr , pointer));
+        System.out.println(findTheAliveNumber(arr , pointer));
     }
-    public static int findTheAlive(Integer[] arr , Integer pointer)
+    public static int findTheAliveNumber(Integer[] arr , Integer pointer)
     {
         while(arr.length>1){
             pointer = pointer+1;
-//            System.out.println(Arrays.toString(arr));
-//            System.out.println(pointer +"  " +arr.length);
+            System.out.println(Arrays.toString(arr));
+
             if(pointer >= arr.length){
+                pointer = pointer%2;
                 arr= removeIndex(arr , (pointer)%2);
             }
             else{
                 arr = removeIndex(arr, pointer);
             }
-
+            System.out.println(pointer +"  " +arr.length);
         }
         return arr[0];
     }
@@ -35,8 +36,5 @@ public class PassTheGun {
         }
         return ans;
     }
-
-
-
 
 }
