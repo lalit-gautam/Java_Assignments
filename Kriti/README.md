@@ -52,3 +52,12 @@ Reverse a negative String Number
 Find the fibonacci number using recurssion and memoization
 
 Pass The Gun Problem (The Gun is given to a number and the number will kill the next number and pass the gun to the number after that Find the last alive Number)
+
+
+6_March_2023
+-------------------
+Reverse the array from a given index to the end
+
+set Zero to all the sides if a zero found in the matrix
+
+
