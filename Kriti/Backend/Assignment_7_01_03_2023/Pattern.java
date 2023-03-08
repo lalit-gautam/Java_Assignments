@@ -8,8 +8,15 @@
 class Pattern{
     public static void main(String[] args){
         // reverseTriangle(10);
-        // printTringle(0, 1 , 4);
-        printPattern(5 , 25);
+        // printTringle(1, 1 , 4);
+        // printPattern(5 , 25);
+    }
+
+    public static void printTriangle1(int col,int row){
+        
+        if(row==1){
+            
+        }
     }
 
     
