@@ -61,3 +61,9 @@ Reverse the array from a given index to the end
 set Zero to all the sides if a zero found in the matrix
 
 
+7_March_2023
+-------------------
+ Find THe Missing Number in array
+ 
+ Calculate the following series
+  1 - 1/2 + 1/3 - 1/4 + 1/5+...+/- 1/n
