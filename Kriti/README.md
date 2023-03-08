@@ -67,3 +67,11 @@ set Zero to all the sides if a zero found in the matrix
  
  Calculate the following series
   1 - 1/2 + 1/3 - 1/4 + 1/5+...+/- 1/n
+  
+  
+  
+8_March_2023
+-------------------
+Check if an array is Palindrome or not
+
+remove characters from a string and find the number in it
