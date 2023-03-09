@@ -46,3 +46,24 @@
 02-mar-23
 1. Searching an element in an array.
 2. Find the occurance of elements in an array.
+
+03-mar-23
+1.   1 
+     2 3 
+     6 5 4 
+     7 8 9 10 
+     15 14 13 12 11 
+     16 17 18 19 20 21 
+     28 27 26 25 24 23 22 
+
+2.   1 2 3 4 
+     9 10 11 12 
+     13 14 15 16 
+     5 6 7 8 
+
+
+1. Java Program to use 'this' Keyword in Inheritance Class.
+2. Counting number of objects created in a class.
+
+1. Java Program to print Odd and Even Numbers from an Array.
+2. Java Program to Access Super Class in a Method Overriding.
