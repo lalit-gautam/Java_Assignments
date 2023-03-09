@@ -16,20 +16,20 @@
             <form action="" onsubmit="return false">
                 <h1><span>Student </span>Form</h1>
                 <div class="single-input">Id:
-                    <input id="sid" type="text" placeholder="Enter id" required>
+                    <input id="sid" type="text" placeholder="Enter id"><h6 id="idError" style="color: red;"></h6>
                 </div>
                 <div class="single-input">Name:
-                    <input id="sname" type="text" placeholder="Enter name" required>
-                </div>
+                    <input id="sname" type="text" placeholder="Enter name">
+                </div><h6 id="nameError" style="color: red;"></h6>
                 <div class="single-input">Dept
-                    <input id="sdept" type="text" placeholder="Enter Department" required>
-                </div>
+                    <input id="sdept" type="text" placeholder="Enter Department" >
+                </div><h6 id="deptError" style="color: red;"></h6>
                 <div class="single-input">Dob
-                    <input id="sdob" type="date" placeholder="Enter DoB" required>
+                    <input id="sdob" type="date" placeholder="Enter DoB" >
                 </div>
                 <div class="single-input">Hubbies:
-                    <input id="shubbies" type="text" placeholder="Hubbies" required>
-                </div>
+                    <input id="shubbies" type="text" placeholder="Hubbies">
+                </div><h6 id="hubError" style="color: red;"></h6>
                 <div class="submit-button">
                     <button class="sbutton" onclick="clickFunction()">Submit</button>
                 </div><br>

@@ -5,6 +5,7 @@ public class Assignment2 {
         String str = "Wel come to Bipros";
         int count=0;
         String[] strArray = str.split(" ");
+        
         for (String temp : strArray) {
             count++;
             System.out.println(temp);
