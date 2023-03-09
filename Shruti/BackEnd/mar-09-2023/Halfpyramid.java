@@ -10,6 +10,7 @@ public class Halfpyramid {
             int totalNoOfColumn = row < noOfRows ? row : 2 * noOfRows - row ;
 
             for (int column = 1; column <= totalNoOfColumn; column++) {
+                
                 System.out.print("* ");
             }
 
