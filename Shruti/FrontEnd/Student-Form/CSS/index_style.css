@@ -34,7 +34,7 @@ h3{
     justify-content: space-between;
 }
 form .student-details .input-box{
-    width: calc(100% / 2  - 20px);
+    width: calc(100% / 2 - 20px);
     margin: 30px 0 12px 0;
 }
 .student-details .input-box .details{

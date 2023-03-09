@@ -6,30 +6,30 @@ public class Pattern1 {
         numInc(1, 1, 1 , noOfrows);
 
     }
-    static void numInc(int r, int c, int i , int no){
-       if( r > no ){
+    static void numInc(int row, int column, int i , int no){
+       if( row > no ){
             return;
         }  
        
 
-       if (r % 2 != 0){
-            if( r >= c){
+       if (row % 2 != 0){
+            if( row >= column){
                 System.out.print(i + " ");            
-                numInc(r, c + 1, i + 1, no);
+                numInc(row, column + 1, i + 1, no);
 
             } else {
                 System.out.println();
-                numInc(r + 1, 1, i + r, no);
+                numInc(row + 1, 1, i + row, no);
                
             }
        } else {
-            if( r >= c){
+            if( row >= column){
                 System.out.print(i+ " ");
-                numInc(r, c + 1, i - 1 , no);
+                numInc(row, column + 1, i - 1 , no);
                 
             } else {
                 System.out.println();
-                numInc(r + 1, 1, i + r + 1, no);
+                numInc(row + 1, 1, i + row + 1, no);
         }    
        }
        
