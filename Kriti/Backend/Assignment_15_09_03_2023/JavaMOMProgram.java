@@ -31,9 +31,9 @@ public class JavaMOMProgram {
 
     public static void main(String[] args) {
         Arrays.sort(javaTeam);
-//        for(int i=0;i<javaTeam.length;i++){
-//            javaTeam[i] = javaTeam[i]+" "+i;
-//        }
+    //    for(int i=0;i<javaTeam.length;i++){
+    //        javaTeam[i] = javaTeam[i]+" "+i;
+    //    }
         System.out.println();
         for(String member: getJavaMomSequence(javaTeam)){
             System.out.println(member);
@@ -46,14 +46,23 @@ public class JavaMOMProgram {
         String[] sequence = new String[javateam.length];
         for(int i=0;i<javateam.length;i++){
             if(i%2==0){
-                sequence[start] = javateam[i];
+                sequence[i] = javateam[start];
                 start++;
-            }
-            else{
-                sequence[end] = javateam[i];
+            }else{
+                sequence[i] = javateam[end];
                 end--;
             }
         }
+        // for(int i=0;i<javateam.length;i++){
+        //     if(i%2==0){
+        //         sequence[start] = javateam[i];
+        //         start++;
+        //     }
+        //     else{
+        //         sequence[end] = javateam[i];
+        //         end--;
+        //     }
+        // }
         return sequence;
 
     }
