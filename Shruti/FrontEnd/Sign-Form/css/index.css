@@ -1,0 +1,102 @@
+*{
+    margin:0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family:'Poppins', sans-serif;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    margin:20px;
+    padding:30px;
+    height:100vh;
+}
+.container{
+    width: 450px;
+    max-height: 500px;
+    margin:75px;
+    padding: 45px;
+    border:1px solid #d9d9d9;
+    border-radius: 9px;
+}
+h3{
+    text-align: center;
+    margin-bottom: 10px;
+    font-size: 20px;
+    color: #1a73e8;
+}
+.text{
+    text-align: center;
+    padding:10px;
+}
+.Sign{
+    font-size: 24px;
+    font-family: "Google Sans","Noto Sans Myanmar UI",arial,sans-serif;
+}
+form .input-box{
+    margin:20px 0;
+}
+form .input-box input{
+    padding:10px 14px;
+    height:56px;
+    width:100%;
+    font-size: 16px;
+    outline: none;
+    border: 1px solid #bab9b9;
+    border-radius: 4px;
+    color: black;
+}
+
+.input-box input:focus{
+    
+    border:2px solid #1a73e8;
+    border-radius: 5px;
+    
+}
+.input-box{
+    position: relative;
+}
+.input-box .label-tag{
+    position: absolute;
+    top: 1.2rem;
+    left: 1.4rem;
+    cursor: text;
+    color: #5f5f5f;
+    transition: all 0.2s ease;
+}
+
+.input-text:focus ~.label-tag{
+    top: -0.3rem;
+    left:0.6rem;
+    font-size: 12px;
+    color: #1a73e8;
+    background-color: white;
+    padding: 0px 4px;
+}
+.anchor a{
+    color: #1a73e8;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 500;
+
+}
+
+.next-button{
+    float: right;
+    padding: 70px 0px;
+}
+
+.next-button input{
+    padding: 8px 23px;
+    font-size: 14px;
+    background-color: #1a73e8;
+    color: whitesmoke;
+    outline: none;
+    border: 1px solid #1a73e8;
+    border-radius: 3px;
+}
+
+.next-button input:hover{
+    background-color: #1968cf;
+}
