@@ -96,3 +96,19 @@ Number Matrix pattern fixed
 5 6 7 8
 ```
 
+
+10_March_2023
+--------------------
+
+program to replace a character at specific index
+
+check if 2 array are equal or not
+
+Matrix Addition
+
+11_March_2023
+--------------------
+
+Multiplication of matrix
+
+perfect number
