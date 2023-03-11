@@ -34,6 +34,7 @@ Find GCD of given 2 numbers
 Find The Maximum element count in a given array
 
 
+
 3_March_2023
 -------------------
 Find a number using Binary Search
@@ -75,3 +76,23 @@ set Zero to all the sides if a zero found in the matrix
 Check if an array is Palindrome or not
 
 remove characters from a string and find the number in it
+
+
+9_March_2023
+-------------------
+Java MOM sequence program
+
+Number Matrix pattern fixed
+```
+1
+3 2
+4 5 6
+10 9 8 7
+```
+```
+1 2 3 4
+9 10 11 12
+13 14 15 16
+5 6 7 8
+```
+
