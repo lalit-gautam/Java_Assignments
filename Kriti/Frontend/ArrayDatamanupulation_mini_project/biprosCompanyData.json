@@ -1,0 +1,47 @@
+[
+    {
+        "year": 2022,
+        "count": 21,
+        "team": "Java"
+    },
+    {
+        "year": 2022,
+        "count": 20,
+        "team": "Python"
+    },
+    {
+        "year": 2023,
+        "count": 27,
+        "team": "Java"
+    },
+    {
+        "year": 2023,
+        "count": 30,
+        "team": ".Net"
+    },
+    {
+        "year": 2023,
+        "count": 25,
+        "team": "Python"
+    },
+    {
+        "year": 2021,
+        "count": 15,
+        "team": "Java"
+    },
+    {
+        "year": 2022,
+        "count": 23,
+        "team": ".Net"
+    },
+    {
+        "year": 2021,
+        "count": 19,
+        "team": ".Net"
+    },
+    {
+        "year": 2021,
+        "count": 15,
+        "team": "Python"
+    }
+]
