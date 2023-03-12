@@ -16,3 +16,7 @@ assignment-2:to to print A * pattern in java
 =============
 assignment-1:matrix multiplication \n
 assignment-2:extract number from string
+12-march-2023
+=============
+Assignment-1:how to remove all white spaces from a string in java
+Assignment-2:how to find sum of all digits of anumber in java
