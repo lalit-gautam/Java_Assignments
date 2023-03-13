@@ -68,7 +68,7 @@ form .input-box input{
 
 .input-text:focus ~.label-tag{
     top: -0.3rem;
-    left:0.6rem;
+    left: 0.6rem;
     font-size: 12px;
     color: #1a73e8;
     background-color: white;

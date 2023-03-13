@@ -1,0 +1,155 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body{
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+    margin: 30px 0px;
+    padding: 20px;
+    background-color: rgb(160, 190, 247);
+    
+}
+h3{
+    margin-top: 10px;
+    text-align: center;
+    font-size: 20px;
+    background-color: cornflowerblue;
+    color: white;
+    padding:10px 0px;
+}
+
+.container{
+    max-width: 650px;
+    height: 1000px;
+    padding: 25px 30px;
+    background-color: whitesmoke;
+}
+.admission-details{
+   padding: 20px 50px 20px 50px;
+   margin-top: 10px;
+}
+
+.admission-details .input-box .details{
+    width:160px;
+    display: inline-block;
+    margin-bottom: 10px;
+}
+.admission-details .input-box .color{
+    width:180px;
+    display: inline-block;
+    margin-bottom: 10px;
+}
+
+input[type="radio"]{
+    width:20px;
+    
+}
+
+input[type = "text"],
+input[type ="password"],
+input[type = "email"],
+input[type = "tel"],
+input[type = "datetime-local"],
+input[type = "date"],
+input[type = "range"],
+input[type = "number"],
+input[type = "time"],
+input[type = "url"],
+input[type = "month"],
+input[type = "week"]
+{
+    width: 325px;
+    padding:5px 20px 5px 10px;
+    margin-bottom: 10px;
+    background-color: white;
+    outline:none;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    font-size: 14px;
+}
+input[type = "range"]{
+    color: #ccc;
+}
+input[type ="search"]{
+    width:270px;
+    padding:5px 20px 5px 10px;
+    margin-bottom: 10px;
+    background-color: white;
+    outline:none;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    font-size: 14px;
+}
+.admission-details .input-box .fieldset{
+    width:280px;
+    background-color: white;
+    outline:none;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+.admission-details .input-box {
+    position: relative;
+}
+
+.admission-details .input-box .subject{
+    position: absolute;
+    top:-1.5px;
+    left:170px;
+}
+
+input[type="checkbox"]{
+    margin-right: 10px;
+}
+
+.save{
+    float: right;
+    font-size: 16px;
+    border-style: none;
+    background-color:cornflowerblue;
+    color:azure;
+    font-weight: 600;
+    border-radius: 2px;
+    padding: 10px 20px 10px 20px;
+}
+.save:hover{
+    background-color: rgb(80, 125, 209);
+}
+.button{
+    float: left;
+    padding: 5px 10px 5px 10px;
+    background-color: white;
+    color:cornflowerblue;
+    border: 1px solid #ccc;
+}
+.button:hover{
+    background-color: white;
+    color:rgb(69, 118, 211)
+}
+.reset{
+    margin:5px;
+    border-style: none;
+    font-size: 14px;
+    background-color:rgb(237, 171, 100);
+    border-radius: 5px;
+    padding: 5px 10px 5px 10px;
+    color: white;
+}
+
+.search{
+    border-style: none;
+    font-size: 12px;
+    background-color:rgb(234, 234, 234);
+    border: 1px solid #2c2b2b;
+    border-radius: 3px;
+    padding: 2px;
+}
+
+
+
+
