@@ -4,25 +4,30 @@ import java.util.List;
 public class OccurenceOfChar {
     public static void main(String[] args) {
         String str = "Programming";
-        String[] strArr = str.split("");
-
-        List<String> list = Arrays.asList(strArr);
-        System.out.println(list);
-        charOccurence(list);
+        String [] strArr = str.split("");
+        
+        charOccurence(strArr);
     }
     //Java Program to Find Occurrence of Each Character
-    static void charOccurence(List<String> list){
-        for (int i = 0; i < list.size(); i++) {
+    static void charOccurence(String[]strArr){
+        for (int i = 0; i < strArr.length; i++) {
         int count = 1;
-            for (int j = i+1; j < list.size(); j++) {
+            for (int j = i+1; j < strArr.length; j++) {
                 
-                if(list.get(i).equals(list.get(j))){
+                if(strArr[i].equals(strArr[j])){
                     count++;
-                    list.remove(j);
+                    if( j == strArr.length-1){
+                        break;
+                    } else{
+                        for (int k = j; k < strArr.length - 1; k++) {
+                            strArr[k] = strArr[k+1];
+                        }
+                        break;
+                    }
                 } 
             }
 
-            System.out.println("The occurence of " + list.get(i) + " is "+ count);
+            System.out.println("The occurence of " + strArr[i] + " is "+ count);
         }
     }
 }

@@ -1,0 +1,19 @@
+.main_container{
+    display: grid;
+    place-items: center;
+    grid-template-columns: 1fr 1fr ;
+    margin-top: 10rem;
+}
+select{
+    width: 10rem;
+    height: 2rem;
+}
+option{
+    width: 6rem;
+    height: 2rem;
+    padding: 10px;
+}
+
+
+
+

@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registation Form</title>
+    <link rel="stylesheet" href="indexStyle.css">
+</head>
+
+<body>
+    <div class="container">
+        <form action="#">
+            <div class="heading">
+            <h3>Registration Form <input type="image" src="Image/bipros logo.jpg" class="image" alt="Bipros" width="37" height="30"></div></h3>
+            
+
+            <div class="admission-details">
+
+
+                <div class="input-box">
+                    <label class="details"> Full Name</label>
+                    <input type="text" class="text" placeholder="Enter Your Fullname" required>
+                </div>
+
+                <div class="input-box">
+                    <label class="details">Password </label>
+                    <input type="password" class="pwd" placeholder="Enter your Password" required>
+                    <input type="hidden" class="custId" value="1234">
+                </div>
+
+                <div class="input-box">
+                    <label class="details"> Email</label>
+                    <input type="email" class="email" placeholder="Enter your Email" required>
+                </div>
+
+                <div class="input-box">
+                    <label class="details"> Phone Number</label>
+                    <input type="tel" class="phone" placeholder="+91- xxxxx yyyyy "
+                        pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}" required>
+                </div>
+
+
+                <div class="input-box">
+
+                    <label class="details">Gender</label>
+
+                    <input type="radio" name="gender" class="male" value="male" required>
+                    <label for="male">Male</label>
+
+                    <input type="radio" name="gender" class="female" value="female" required>
+                    <label for="female">Female</label>
+
+                    <input type="radio" name="gender" class="female" value="female" required>
+                    <label for="female">Others</label>
+
+
+                </div>
+
+                <div class="input-box">
+                    <label class="details"> Date Of Birth</label>
+                    <input type="date" class="dob" required>
+                </div>
+
+                <div class="input-box">
+                    <label class="details">College Name</label>
+                    <input type="search" class="search" placeholder="Search your College Name" required >
+                    <input type="submit" value="Search" class="search submit" >
+                </div>
+
+                <div class="input-box">
+                    <label class="details"> Joining Week</label>
+                    <input type="text" class="week" onfocus="(this.type='week')" onblur="if(this.value==''){this.type='text'}" placeholder="week 1, 2023"required>
+                </div>
+
+
+                <div class="input-box">
+                    <label class="details">Joinig Date and Time</label>
+                    <input type="text" onfocus="(this.type='datetime-local')" onblur="if(this.value==''){this.type='text'}"placeholder="mm/dd/yyyy 00:00" class="birthdaytime" required>
+                </div>
+
+                <!-- <div class="input-box">
+                    <div class="details"> Graduation Date</div>
+                    <label class="details"> Start Date</label>
+                    <input type="date" class="dob" min="2000-12-01" required>
+                    <label class="details"> End Date</label>
+                    <input type="date" class="dob" max="2023-03-13" required>
+                </div> -->
+
+                <div class="input-box ">
+                    <label class="details" id="subject"> Select your subject</label>
+                    <div class="subject">
+                        <label for="DSA">
+                            <input type="checkbox" value="DSA" id="01">DSA
+                        </label>
+                        
+                        <label for="DBMS">
+                            <input type="checkbox" value="DBMS" id="02">DBMS
+                        </label>
+                        
+                        <label for="OP">
+                            <input type="checkbox" value="OP" id="03">OP
+                        </label>
+                    </div>
+                </div>
+
+                <div class="input-box">
+                    <label class="details">Number of Languages</label>
+                    <input type="number" class="quantity" min="1" max="10" placeholder="1" required>
+                </div>
+
+
+                <div class="input-box">
+                    <label class="details">Rate Your Skills</label>
+                    <input type="range" class="range" min="0" max="10">
+                </div>
+
+                <div class="input-box ">
+                    <label class="details color">Choose Your Fav colour </label>
+                    <input type="color" class="favcolor" required>
+                </div>
+
+                <div class="input-box">
+                    <label class="details">Birth-Month</label>
+                    <input type="text" onfocus="(this.type='month')" onblur="if(this.value==''){this.type='text'}"placeholder="mmm yyyy" class="month" required>
+                </div>
+
+                <div class="input-box">
+                    <label class="details">Time for Classes</label>
+                    <input type="text" onfocus="(this.type='time')" onblur="if(this.value==''){this.type='text'}"placeholder="00:00" class="time" required>
+                </div>
+
+                <div class="input-box">
+                    <label class="details"> Select a File</label>
+                    <input type="file" class="file" required>
+                </div>
+
+                <div class="input-box">
+                    <label class="details"> GitHub Link</label>
+                    <input type="url" class="url" placeholder="http://example.com" required>
+                </div>
+
+                <input type="button" class="save button" value=" < Previous Page">
+
+                
+                <input type="submit" class="save" value="Save">
+                <input type="reset" class="save" value="Reset">
+                
+                
+
+                
+                
+            </div>
+        </form>
+    </div>
+</body>
+
+</html>

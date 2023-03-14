@@ -57,18 +57,18 @@ form .input-box input{
 .input-box{
     position: relative;
 }
-.input-box .label-tag{
+.input-box .label-tag {
     position: absolute;
     top: 1.2rem;
     left: 1.4rem;
     cursor: text;
     color: #5f5f5f;
-    transition: all 0.2s ease;
+    transition: all 0.2s ease; 
 }
 
-.input-text:focus ~.label-tag{
+.input-text:focus ~.label-tag, .input-text:not(:placeholder-shown).input-text:not(:focus) ~.label-tag{
     top: -0.3rem;
-    left:0.6rem;
+    left: 0.6rem;
     font-size: 12px;
     color: #1a73e8;
     background-color: white;
