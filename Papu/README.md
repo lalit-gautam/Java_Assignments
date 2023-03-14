@@ -20,3 +20,8 @@ assignment-2:extract number from string
 =============
 Assignment-1:how to remove all white spaces from a string in java
 Assignment-2:how to find sum of all digits of anumber in java
+
+14-march-2023
+============
+Assignment-1:Find square root without using predefined method
+Assignment-2:Find all number those are greater than the average of the number present in the array
