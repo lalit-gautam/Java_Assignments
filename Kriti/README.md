@@ -127,3 +127,14 @@ Reverse a String
 Find Missing Number of Array
 
 Separatee even odd in an array
+
+
+Question By Sushant
+--------------------------
+Find the max sum of 3 continious subarray from an array.(index of array) (FP).
+0, 0, 1, 0, 2, 0, 2, 2, 1, 6(Ven eck Sequence)
+
+
+
+Find the sum of second largetst and second smallest number sum in an array.
+Reverse a number.
