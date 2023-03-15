@@ -95,7 +95,7 @@ function clickFunction() {
     }
     if(hubbies.length<10)
     {
-        document.getElementById("deptError").innerHTML="Student hubbies most contains minium 10 character";
+        document.getElementById("hubError").innerHTML="Student hubbies most contains minium 10 character";
        // alert("Student hubbies most contains minium 10 character");
         return;
     }

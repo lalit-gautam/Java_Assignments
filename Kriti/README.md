@@ -112,3 +112,18 @@ Matrix Addition
 Multiplication of matrix
 
 perfect number
+
+
+13_March_2023
+--------------------
+
+Anagram Check
+
+Reverse a String
+
+14_March_2023
+--------------------
+
+Find Missing Number of Array
+
+Separatee even odd in an array
