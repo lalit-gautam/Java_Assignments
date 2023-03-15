@@ -16,7 +16,7 @@
         return res;
     }
 
-    var table = document.getElementById("student_table_body");
+    var table = document.getElementById("student_table_details");
     for (let i = 0; i < ans.length; i++) {
         var row = table.insertRow(0);
         var cell1 = row.insertCell(0);
