@@ -1,0 +1,49 @@
+.container{
+    background-color: #dbd8f1;
+    
+}
+.navbar{
+    background-color: #895aff;
+    
+}
+.navbar-brand,.nav-link{
+    color: white;
+}
+.img-thumbnail{
+    width:200px;
+    height:auto;
+    border-radius: 100px;
+    display: flex;
+    justify-content:center;
+}
+.card{
+   align-items: center;
+   margin:60px 20px;
+   border: 1px solid rgba(0,0,0,.125);
+   
+}
+.card-title{
+    display: inline-block;
+}
+
+.icon {
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    float: right;
+    width:30px;
+    height:30px;
+    text-decoration: none;
+    border-radius: 15px;
+    /* background-color: hwb(0 100% 0% / 0.932); */
+    margin-right:20px;
+    box-shadow: 0 0.5rem 1rem rgb(0 0 0 / 15%);
+    color: rgb(253, 254, 255);
+    transition: all .4s ease;
+}
+
+.card-body .card-title{
+    text-align: center;
+    display: flex;
+    justify-content: center;
+}
