@@ -63,6 +63,7 @@ data = [
         'year': 2025,
         "count": 11,
         "team": "Warehouse"
+        // object with 2 teams
     }
 ];
 
