@@ -1,0 +1,80 @@
+
+h3{
+    text-align: center;
+    padding: 10px;
+    background-color:#915aff;
+    color: azure;
+    border-radius: 3px;
+    font-size: 20px;
+}
+.add-contact .container{
+    max-width: 900px;
+    height: 600px;
+    padding: 25px 30px;
+    border-radius: 5px;
+    background-color: whitesmoke;
+    box-shadow: -0.2rem 0.5rem 1rem rgb(0 0 0 / 15%);
+}
+.student-details{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+form .student-details .input-box{
+    width: calc(100% / 3 - 20px);
+    margin: 30px 0 12px 0;
+}
+.student-details .input-box .details{
+    width:240px;
+    display: inline-block;
+    margin-bottom: 10px;
+    font-weight: bold;
+    color: rgb(75, 75, 75);
+    margin-bottom: 5px;
+}
+.student-details .input-box .gender{
+    margin-bottom: 20px;
+}
+.student-details .input-box input[type = "text"],
+input[type="tel"],
+input[type = "date"],
+input[type = "email"]{
+    height: 55px;
+    width: 100%;
+    outline: none;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    padding:0 20px 0 15px;
+    font-size: 14px;
+    border-bottom-width: 2px;
+    transition: all 0.3s ease;
+}
+input[type="radio"]{
+    width:20px;
+    
+}
+input[type = "file"]{
+    margin-top: 10px;
+    
+}
+
+.student-details .input-box input:focus{
+    border-color:rgb(125, 85, 204) ;
+}
+
+.save{
+    float: right;
+    background-color:#915aff;
+    color:azure;
+    font-weight: 600;
+    font-size: 16px;
+    border-style: none;
+    border-radius: 2px;
+    padding: 10px 20px 10px 20px;
+    margin-right: 10px;
+    margin-top: 30px;
+}
+
+.save:hover{
+    background-color: #7f43f8;
+}

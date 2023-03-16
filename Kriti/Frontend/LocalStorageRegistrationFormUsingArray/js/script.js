@@ -1,12 +1,12 @@
 function getAllData() {
-    let student_data = [];
+    
     let form = document.getElementById("student_form").elements;
     let student_id = form.namedItem('student_id').value;
     let student_name = form.namedItem('student_name').value;
     let student_dept = form.namedItem('student_dept').value;
     let student_dob = form.namedItem('student_dob').value;
     let student_hobby = form.namedItem('hobbies').value;
-    student_data = {
+    let student_data = {
         id: parseInt(student_id),
         details : {
         name: student_name,

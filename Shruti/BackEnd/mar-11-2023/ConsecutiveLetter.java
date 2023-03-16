@@ -1,7 +1,7 @@
 
 public class ConsecutiveLetter {
     public static void main(String[] args) {
-        String str = "l";
+        String str = "ll";
 
         String[] strArr = str.split("");
         System.out.println(identicalLetter(strArr));
