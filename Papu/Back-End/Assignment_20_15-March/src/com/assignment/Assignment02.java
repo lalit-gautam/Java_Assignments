@@ -8,6 +8,7 @@ public class Assignment02 {
 	//print the ven eck sequence upto to a given number
 	public static void printVenEckSequence(int a)
 	{
+		int first=0;
 		
 	}
 
