@@ -6,6 +6,7 @@ function getAllData(){
     let temp_gender = document.getElementById("gender");
     let mob_No = document.getElementById("mob-no").value;
     let dob = document.getElementById("dob").value;
+    let age = ageCalculator(dob);
     let email_intern = document.getElementById("email").value;
     let file_name = document.getElementById("file").value;
     let loc= document.getElementById("location").value;
@@ -18,11 +19,23 @@ function getAllData(){
         nickName: n_Name ,
         intern_gender: gender,
         mobileNo: mob_No,
-        dOB: dob,
+        age: age,
         email: email_intern,
         file: file_name,
         location: loc
     };
+    
+    function ageCalculator(dob){
+        var dateOfBirth = new Date(dob);
+        var time_diff = Date.now() - dateOfBirth.getTime();
+
+        var age_date = new Date(time_diff);
+        var year = age_date.getUTCFullYear();
+
+        var age = Math.abs(year - 1970);
+
+        return age;
+    }
     
     return internsData;
     
@@ -43,17 +56,7 @@ function addContact(){
     localStorage.setItem("data",JSON.stringify(old_data));
     }
     alert("Contact has been added");
-    view();
+
 }
 
-function view(){
-    
-    let localData = JSON.parse(localStorage.getItem('data'));
-    if(localData != null){
-        let obj = localData[6];
-        
-        document.getElementById('firstCard').innerHTML = obj.firstName;
-            
-        
-    }
-}
+
