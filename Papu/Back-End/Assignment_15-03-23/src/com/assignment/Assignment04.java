@@ -22,8 +22,10 @@ public class Assignment04 {
 				num = num / 10;
 			}
 		}
-		if (temp < 0)
-			System.out.println("The reverse is -" + sum);
+		if (temp < 0) {
+			sum=sum*(-1);
+			System.out.println("The reverse is " + sum);
+		}
 		else
 			System.out.println("The reverse is " + sum);
 	}
