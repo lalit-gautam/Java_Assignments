@@ -1,5 +1,5 @@
 let view = (user) => {
-  return `<div class="edit-icon"><a href="AddContact.html?mobile=${user['mobileNo']}"><i class="fa fa-solid fa-pencil"></i></a><i class="fa fa-solid fa-trash-can"></i></div>
+  return `<div class="edit-icon"><a href="AddContact.html?mobile=${user['mobileNo']}"><i class="fa fa-solid fa-pencil"></i></a><a style="cursor: pointer;" onclick="deleteContact(${user['mobileNo']})"><i class="fa fa-solid fa-trash"></i></a></div>
     <img src="Images/2.jpg" class="img-thumbnail" alt="...">
     <div class="card-body">
       <h5 class="card-title">${user['firstName']} ${user['lastName']}</h5>
@@ -16,16 +16,20 @@ let view = (user) => {
         <dt class="col-lg-4 offset-md-2">Age:</dt>
         <dd class="col-lg-6">${user['age']}</dd>
       </dl>
-
     </div>`
 }
 
 let notAdded =() =>{
     return`No Profile Added`
 }
+
+//Getting Data From LocalStorage
+
 let localData = function getDataFromLocalStorage() {
   return JSON.parse(localStorage.getItem('data'));
 }
+
+//Read Data From LocalStorage
 
 if (localData() != null){
   localData().forEach(element => {
@@ -44,3 +48,10 @@ if (localData() != null){
   noProfileAdded();
 }
 
+//Delete Contact
+
+// function deleteContact(mobile) {
+//   if (confirm('Are you sure you want to delete ' + mobile + ' ?')) {
+//   localStorage.setItem('data', localData().filter(contact => contact.mobileNo != mobile));  
+//   location.reload();
+// }}

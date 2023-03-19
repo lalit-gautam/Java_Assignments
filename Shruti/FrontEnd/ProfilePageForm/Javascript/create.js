@@ -1,4 +1,4 @@
-document.getElementById("submitButton").disabled = false;
+
 function checkForm() {
     var canSubmit = true;
     const dataObject = getAllData();
@@ -14,12 +14,7 @@ function checkForm() {
         alert("Please insert data");
     }
 
-}
-
-let localData = function getDataFromLocalStorage() {
-    return JSON.parse(localStorage.getItem('data'));
-  }
-  
+} 
 
 function getAllData() {
 
@@ -47,7 +42,7 @@ function getAllData() {
         firstName: f_name,
         lastName: l_Name,
         nickName: n_Name,
-        internGender: selectedGender,
+        intern_gender: selectedGender,
         mobileNo: mob_No,
         age: age,
         email: email_intern,
@@ -78,43 +73,43 @@ function createProfile() {
         localStorage.setItem("data", JSON.stringify([getAllData()]));
     } else {
         let old_data = JSON.parse(localStorage.getItem("data"));
-        if (getAllData() != null) {
-            old_data.push(getAllData());
-            localStorage.setItem("data", JSON.stringify(old_data));
-        }
+        
+        old_data.push(getAllData());
+        localStorage.setItem("data", JSON.stringify(old_data));
+        
     }
 }
 
-function getParamFromUrl(queryParam) {
-    const params = new URL(window.location.href).searchParams;
-    return params.get(queryParam);
-}
+// function getParamFromUrl(queryParam) {
+//     const params = new URL(window.location.href).searchParams;
+//     return params.get(queryParam);
+// }
 
-function getControlById(key, value = undefined) {
-    let control = document.getElementById(key);
-    if (control && value) {
-        control.value = value;
-    }
-    return control;
-}
+// function getControlById(key, value = undefined) {
+//     let control = document.getElementById(key);
+//     if (control && value) {
+//         control.value = value;
+//     }
+//     return control;
+// }
 
-// update profile
-window.onload = () => {
-    const mobilNoFromParam = getParamFromUrl('mobile');
+// // update profile
+// window.onload = () => {
+//     const mobilNoFromParam = getParamFromUrl('mobile');
 
-    if (mobilNoFromParam) {
-        let currentUser = [...localData('data')].find(e => e.mobileNo == mobilNoFromParam);
-        if (currentUser) {
-            let { firstName, lastName, nickName, internGender, mobileNo, age, email, file, location } = currentUser;
-            getControlById('first-name', firstName);
-            getControlById('last-name', lastName);
-            getControlById('nick-name', nickName);
-            getControlById('mob-no', mobileNo);
-            getControlById('dob', age);
-            getControlById('email', email);
-            getControlById('file', file);
-            getControlById('location', location);
-        }
-    }
-}
+//     if (mobilNoFromParam) {
+//         let currentUser = [...localData('data')].find(e => e.mobileNo == mobilNoFromParam);
+//         if (currentUser) {
+//             let { firstName, lastName, nickName, internGender, mobileNo, age, email, file, location } = currentUser;
+//             getControlById('first-name', firstName);
+//             getControlById('last-name', lastName);
+//             getControlById('nick-name', nickName);
+//             getControlById('mob-no', mobileNo);
+//             getControlById('dob', age);
+//             getControlById('email', email);
+//             getControlById('file', file);
+//             getControlById('location', location);
+//         }
+//     }
+// }
 
