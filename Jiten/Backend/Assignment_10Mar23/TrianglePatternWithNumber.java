@@ -1,8 +1,8 @@
-package Assignment_03Mar23;
+package Assignment_10Mar23;
 
 import java.util.Scanner;
 
-public class Pattern_3 {
+public class TrianglePatternWithNumber {
 	public static void main(String[] args) {
 		Scanner sc = new Scanner(System.in);
 		System.out.println("Enter row : ");
@@ -12,7 +12,7 @@ public class Pattern_3 {
 		int revPrint,print=1;
 		for (int i = 1; i <= row; i++) {
 
-			if (i == 1 || i % 2 == 0) {
+			if ( i % 2 == 1) {
 				for (int j = 1; j <= i; j++) {
 					System.out.print(print+" ");
 					print++;

@@ -147,7 +147,10 @@ Write a Java program to remove the duplicate elements of a given array and retur
 
 17_March_2023
 --------------------------
+Write a Java program to find all triplets equal to a given sum in a unsorted array of integers.
 
+Write a Java program to find maximum product of two integers in a given array of integers.
+ 
 
 18_march_2023
 --------------------------
