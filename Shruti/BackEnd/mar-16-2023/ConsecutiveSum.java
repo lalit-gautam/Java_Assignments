@@ -4,7 +4,7 @@ import java.util.Arrays;
 
 public class ConsecutiveSum {
     public static void main(String[] args) {
-        int[] arr = {5, 6, 4, 3, 7, 3, 9, 2, 8};
+        int[] arr = {5, 6,3};
         int[] newArr;
         if(arr.length % 3 ==0){
             newArr = new int[arr.length / 3];
