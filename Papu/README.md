@@ -25,3 +25,12 @@ Assignment-2:how to find sum of all digits of anumber in java
 ============
 Assignment-1:Find square root without using predefined method
 Assignment-2:Find all number those are greater than the average of the number present in the array
+15-march-2023
+=============
+Assignment1:Reverse a number
+Assignment2:sum of second largest and second smallest in the array
+16-march-2023
+=============
+Assignment1:To check a number is emipr or not
+Assignment2:To check a number is tech number is not
+

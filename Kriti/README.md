@@ -138,3 +138,22 @@ Find the max sum of 3 continious subarray from an array.(index of array) (FP).
 
 Find the sum of second largetst and second smallest number sum in an array.
 Reverse a number.
+
+16_March_2023
+--------------------------
+Write a Java program to find common elements from three sorted (in non-decreasing order) arrays.
+
+Write a Java program to remove the duplicate elements of a given array and return the new length of the array.
+
+17_March_2023
+--------------------------
+Write a Java program to find all triplets equal to a given sum in a unsorted array of integers.
+
+Write a Java program to find maximum product of two integers in a given array of integers.
+ 
+
+18_march_2023
+--------------------------
+Write a Java program to cyclically rotate a given array clockwise by one.
+
+place all zeros in last index
