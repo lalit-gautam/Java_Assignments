@@ -1,6 +1,6 @@
-let add = (user) =>{
-    return `<div class="edit-icon"><a href="AddContact.html"><i class="fa fa-solid fa-pencil"></i></a></div>
-    <img src="Images/6.jpg" class="img-thumbnail" alt="...">
+let view = (user) => {
+  return `<div class="edit-icon"><a href="AddContact.html?mobile=${user['mobileNo']}"><i class="fa fa-solid fa-pencil"></i></a><i class="fa fa-solid fa-trash-can"></i></div>
+    <img src="Images/2.jpg" class="img-thumbnail" alt="...">
     <div class="card-body">
       <h5 class="card-title">${user['firstName']} ${user['lastName']}</h5>
       <dl class="row">
@@ -19,21 +19,28 @@ let add = (user) =>{
 
     </div>`
 }
-let dataFromLocalStorage = function getDataFromLocalStorage() {
-    return JSON.parse(localStorage.getItem('data'));
+
+let notAdded =() =>{
+    return`No Profile Added`
+}
+let localData = function getDataFromLocalStorage() {
+  return JSON.parse(localStorage.getItem('data'));
 }
 
-dataFromLocalStorage().forEach(element => {
-     let tempDiv = document.createElement('div');
-     tempDiv.className = "card col-lg-4";
-     tempDiv.innerHTML = add(element);
-     document.getElementById("cardGroups").appendChild(tempDiv);
-});
+if (localData() != null){
+  localData().forEach(element => {
+    let tempDiv = document.createElement('div');
+    tempDiv.className = "card col-lg-4";
+    tempDiv.innerHTML = view(element);
+    document.getElementById("cardGroups").appendChild(tempDiv);
+  });
+} else {
+  function noProfileAdded(){
+    let temp_P = document.createElement('p');
+    temp_P.className = "description";
+    temp_P.innerHTML = notAdded();
+    document.getElementById("descr").appendChild(temp_P);
+  }
+  noProfileAdded();
+}
 
-// if(dataFromLocalStorage() == null){
-//   let temp_P = document.createElement('p');
-//   temp_P.className = "description";
-//   temp_P.innerHTML = 'No Profile Added';
-//   document.getElementById("descr").appendChild(temp_P);
-// }
-// dataFromLocalStorage();
