@@ -1,10 +1,8 @@
-
 import java.util.Arrays;
 
-public class VanEckSequence {
+public class Assignment {
     public static void main(String[] args) {
-        int[] arr1 = solution(20);
-        System.out.println(Arrays.toString(arr1));
+        System.out.println("HelloWorld");
 
     }
 

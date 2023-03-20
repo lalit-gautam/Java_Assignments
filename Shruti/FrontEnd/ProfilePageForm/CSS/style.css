@@ -64,3 +64,6 @@
 .edit-icon a{
     color: #434242;
 }
+.fa-trash-can::before{
+    color: #434242;
+}
