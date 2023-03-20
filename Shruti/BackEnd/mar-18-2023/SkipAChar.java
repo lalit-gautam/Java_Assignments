@@ -1,4 +1,4 @@
-public class SkipChar{
+public class SkipAChar{
     public static void main(String[] args) {
         skipChar("", "baccad"); //skip character a
         System.out.println(skipChar2("baccadh"));

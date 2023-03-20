@@ -1,6 +1,6 @@
 import java.util.ArrayList;
 
-public class SubSequence{
+public class SubSequenceOfString{
     public static void main(String args[]){
         
         System.out.println(subSequence("", "abc"));
