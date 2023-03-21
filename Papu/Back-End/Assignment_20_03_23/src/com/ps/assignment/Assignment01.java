@@ -46,13 +46,13 @@ public class Assignment01 {
 		{
 			if(a<20)
 			{
-				wordsString=wordsString+unitarray[a];
+				wordsString=wordsString+unitarray[a]+" ";
 			}
 			else {
 				wordsString=wordsString+tensArray[a/10];
 				if(a%10>0)
 				{
-					wordsString=wordsString+"-"+unitarray[a%10];
+					wordsString=wordsString+" "+unitarray[a%10];
 				}
 			}
 		}
