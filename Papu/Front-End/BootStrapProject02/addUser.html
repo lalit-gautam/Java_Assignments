@@ -1,0 +1,132 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+    <title>Add Users</title>
+    <link rel="stylesheet" href="styles1.css">
+</head>
+
+<body>
+    <div class="form-container">
+        <form style="background-color: rgb(9, 171, 171);" onsubmit="return false">
+            <div class="form-row">
+                <div class="form-group col-md-4">
+                    <label for="inputEmail4">First Name</label>
+                    <input type="text" class="form-control" id="fname" placeholder="first name"><span id="fnameErr"
+                        style="color: red;"></span>
+                </div>
+                <div class="form-group col-md-4">
+                    <label for="inputEmail4">Last Name</label>
+                    <input type="text" class="form-control" id="lname" placeholder="last name"><span id="lnameErr"
+                        style="color: red;"></span>
+                </div>
+                <div class="form-group col-md-4">
+                    <label for="inputEmail4">Nick Name</label>
+                    <input type="text" class="form-control" id="niname" placeholder="nick name"><span id="nnameErr"
+                        style="color: red;"></span>
+                </div>
+            </div>
+            <div class="form-row">
+                <div class="form-group col-md-4">
+                    <label for="inputEmail4">Mobile No.</label>
+                    <input type="tel" class="form-control" id="mobileNo" placeholder="Enter phone number"><span
+                        id="mobileErr" style="color: red;"></span>
+                </div>
+                <div class="form-group col-md-4">
+                    <label for="inputEmail4">DOB</label>
+                    <input type="date" class="form-control" id="dob" placeholder="nick name">
+                </div>
+                <div class="form-check">
+                    <label>Select Gender</label><br>
+                    <input class="form-check-input col-md-4" type="radio" name="flexRadioDefault" id="flexRadioDefault1"
+                        value="He">
+                    <label class="form-check-label" for="flexRadioDefault1">&nbsp;&nbsp;
+                        male
+                    </label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <input class="form-check-input col-md-4" type="radio" name="flexRadioDefault" id="flexRadioDefault2"
+                        value="She" checked>
+                    <label class="form-check-label" for="flexRadioDefault2">&nbsp;&nbsp;
+                        female
+                    </label>
+                </div>
+            </div>
+            <div class="form-row">
+                <div class="form-group col-md-4">
+                    <label for="inputEmail4">Email Id</label>
+                    <input type="email" class="form-control" id="email" placeholder="email Id"><span id="emailErr"
+                        style="color: red;"></span>
+                </div>
+                <div class="form-group col-md-4">
+                    <label for="inputEmail4">Picture</label>
+                    <input type="file" class="form-control" id="photo" placeholder="Photo file">
+                </div>
+            </div>
+            <!-- <button type="submit" class="btn btn-primary" id="addButton" style="color: green;">Add</button> -->
+            <div class="container">
+                <br><br>
+                <!-- Trigger the modal with a button -->
+                <button type="button" class="btn btn-info btn-col-lg-3" data-toggle="modal" data-target="#myModal"
+                    id="addButton">Add</button>
+                <!-- 
+                Modal -->
+                <div class="modal fade" id="myModal" role="dialog">
+                    <div class="modal-dialog modal-sm">
+
+                        <!-- Modal content -->
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                <h4 class="modal-title">Customer is added </h4>
+                            </div>
+                            <div class="modal-body">
+                                <p>Customer added successfully</p>
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+                <button type="button" class="btn btn-primary" id="resetbutton" style="color: red;">Reset</button>
+            </div>
+            <!-- <a href="./index.html" id="home">
+                <button type="button" class="btn btn-link">Home</button>
+            </a> -->
+            <!-- <svg xmlns="http://www.w3.org/2000/svg" width="23" height="23" fill="currentColor" class="bi bi-house" viewBox="0 0 16 16">
+                <path d="M8.707 1.5a1 1 0 0 0-1.414 0L.646 8.146a.5.5 0 0 0 .708.708L2 8.207V13.5A1.5 1.5 0 0 0 3.5 15h9a1.5 1.5 0 0 0 1.5-1.5V8.207l.646.647a.5.5 0 0 0 .708-.708L13 5.793V2.5a.5.5 0 0 0-.5-.5h-1a.5.5 0 0 0-.5.5v1.293L8.707 1.5ZM13 7.207V13.5a.5.5 0 0 1-.5.5h-9a.5.5 0 0 1-.5-.5V7.207l5-5 5 5Z"/>
+              </svg> -->
+            <a href="./index.html" id="home">
+                <button type="button" class="btn btn-link">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="23" height="23" fill="currentColor"
+                        class="bi bi-house" viewBox="0 0 16 16">
+                        <path
+                            d="M8.707 1.5a1 1 0 0 0-1.414 0L.646 8.146a.5.5 0 0 0 .708.708L2 8.207V13.5A1.5 1.5 0 0 0 3.5 15h9a1.5 1.5 0 0 0 1.5-1.5V8.207l.646.647a.5.5 0 0 0 .708-.708L13 5.793V2.5a.5.5 0 0 0-.5-.5h-1a.5.5 0 0 0-.5.5v1.293L8.707 1.5ZM13 7.207V13.5a.5.5 0 0 1-.5.5h-9a.5.5 0 0 1-.5-.5V7.207l5-5 5 5Z" />
+                    </svg>
+                </button>
+            </a>
+        </form>
+    </div>
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.7/dist/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+    <script src="add.js"></script>
+</body>
+
+</html>
