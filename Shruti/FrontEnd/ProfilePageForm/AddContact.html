@@ -56,15 +56,15 @@
                 </div>
                 
                 <div class="input-box">
-                    <label class="details gender">Gender</label>
+                    <label class="details">Gender</label>
 
-                    <input type="radio" name = "gender" id="gender"class="male" value="male" required>
+                    <input type="radio" name = "gender" id="Male"class="gender" value="male" required>
                     Male
 
-                    <input type="radio" name = "gender" class="female" value="female" required>
+                    <input type="radio" name = "gender" id="Female" class="gender" value="female" required>
                     Female
 
-                    <input type="radio" name = "gender" class="female" value="female" required>
+                    <input type="radio" name = "gender" id="Others" class="gender" value="female" required>
                     Others
 
                 </div>
@@ -99,13 +99,13 @@
             </div>
             
 
-            <input class="save" type="submit" onclick="addContact()" value="Add">
+            <input class="save" type="submit" id="submitButton" onclick="checkForm()" value="Add">
             <input type="reset" class="save"  value="Reset">
 
         </form>
     </div>
 
-    <script src="Javascript/crud.js"></script>
+    <script src="Javascript/create.js"></script>
 </body>
 
 </html>

@@ -38,11 +38,10 @@
     height:30px;
     text-decoration: none;
     border-radius: 15px;
-    /* background-color: hwb(0 100% 0% / 0.932); */
     margin-right:20px;
     box-shadow: 0 0.5rem 1rem rgb(0 0 0 / 15%);
     color: rgb(253, 254, 255);
-    transition: all .4s ease;
+
 }
 
 .card-body .card-title{
@@ -62,5 +61,8 @@
     margin-left: 20em;
 }
 .edit-icon a{
+    color: #434242;
+}
+.fa-trash-can::before{
     color: #434242;
 }

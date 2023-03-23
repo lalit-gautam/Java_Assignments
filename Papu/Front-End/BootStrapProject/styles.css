@@ -1,0 +1,47 @@
+body {
+    /* background-image: url("https://codetheweb.blog/assets/img/posts/css-advanced-background-images/cover.jpg"); */
+    background-color: rgb(206, 239, 252);
+}
+
+#photo-align {
+    padding: 10%;
+}
+
+.nav-background {
+    background-color: cadetblue;
+    background-size: contain;
+}
+
+.card {
+    margin-bottom: 10px;
+}
+.navbar navbar-expand-lg bg-body-tertiary
+{
+    background-color: bisque;
+
+}
+.navbar-brand{
+    align-items: last baseline;
+}
+.container
+{
+    align-items: end;
+}
+
+.card
+{
+    margin-top: 10px;
+}
+.icon4
+{
+    text-align: end;
+}
+
+.adit_btn
+{
+    width: 2.5rem;
+    position: absolute;
+    right: 1rem;
+     margin-top: 0.5rem; 
+    
+}
