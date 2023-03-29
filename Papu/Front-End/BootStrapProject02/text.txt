@@ -1,0 +1,10 @@
+ getItemById("photo").addEventListener('change', function () {
+        console.log("change is occured");
+        const reader = new FileReader;
+        reader.addEventListener('load', () => {
+
+            //localStorage.setItem("recent_image",reader.result);
+            photo = reader.result;
+        });
+        reader.readAsDataURL(this.files[0]);
+    });

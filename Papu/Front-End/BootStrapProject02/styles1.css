@@ -1,0 +1,13 @@
+.form-container {
+    padding: 5%;
+    padding-top: 5%;
+}
+
+body {
+    background-image: url("https://i.stack.imgur.com/SvWWN.png");
+}
+
+#home {
+    align-items: center;
+    color: rgb(73, 73, 160);
+}
