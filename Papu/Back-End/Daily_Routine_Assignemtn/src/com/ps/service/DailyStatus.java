@@ -44,7 +44,7 @@ public class DailyStatus {
 
 	public static boolean getResult() {
 		Scanner sc = new Scanner(System.in);
-		if (sc.next().toLowerCase().equals("y")) {
+		if (sc.next().equalsIgnoreCase("y")) {
 			return true;
 		}
 		return false;
