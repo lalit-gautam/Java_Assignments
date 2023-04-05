@@ -1,4 +1,3 @@
-
 import java.util.Scanner;
 public class LookNSay {
     public static void main(String[] args) {
@@ -11,6 +10,7 @@ public class LookNSay {
             System.out.println(ans);
             ans = printSequence(ans);
         }
+        sc.close();
     }
     public static String printSequence(String num) {
         String str = num ;
