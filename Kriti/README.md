@@ -164,3 +164,8 @@ place all zeros in last index
 print a upper and lower triangle in a matrix
 
 Look N Say 
+
+06_04_2023
+--------------------------
+Merge 2 sorted array
+https://leetcode.com/problems/merge-two-sorted-lists/

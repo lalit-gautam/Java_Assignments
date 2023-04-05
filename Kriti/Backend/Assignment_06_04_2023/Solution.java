@@ -36,6 +36,7 @@ class Solution {
         tempNodeIterator.next = tempNode;
         tempNodeIterator = tempNodeIterator.next;
         }
+        
         System.out.println();
         for(int i=0;i<10;i++){
             System.out.print(parent + " ");
