@@ -157,3 +157,10 @@ Write a Java program to find maximum product of two integers in a given array of
 Write a Java program to cyclically rotate a given array clockwise by one.
 
 place all zeros in last index
+
+
+30_march_2023
+--------------------------
+print a upper and lower triangle in a matrix
+
+Look N Say 
