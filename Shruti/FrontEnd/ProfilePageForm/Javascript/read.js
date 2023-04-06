@@ -1,6 +1,6 @@
 let view = (user) => {
   return `<div class="edit-icon"><a href="AddContact.html?id=${user['id']}"><i class="fa fa-solid fa-pencil"></i></a>
-  <a style="cursor: pointer;" onclick="deleteContact(${user['id']}, '${user['firstName']}')"><i class="fa fa-solid fa-trash"></i></a></div>
+  <a style="cursor: pointer;" data-bs-toggle="modal" data-bs-target="#exampleModal" ><i class="fa fa-solid fa-trash"></i></a></div>
     <img src="Images/2.jpg" class="img-thumbnail" alt="...">
     <div class="card-body">
       <h5 class="card-title">${user['firstName']} ${user['lastName']}</h5>
@@ -17,6 +17,24 @@ let view = (user) => {
         <dt class="col-lg-4 offset-md-2">Age:</dt>
         <dd class="col-lg-6">${user['age']}</dd>
       </dl>
+    </div> 
+    <!-- Modal -->
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel"></h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+          Are you sure you want to delete ${user['firstName']}'s profile
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-light" data-bs-dismiss="modal">No</button>
+            <button type="button" class="btn btn-danger" onclick="deleteContact(${user['id']}, '${user['firstName']}')">Delete</button>
+          </div>
+        </div>
+      </div>
     </div>`
 }
 
@@ -37,11 +55,10 @@ let localData = function getDataFromLocalStorage() {
 
 //Delete Contact
 
-function deleteContact(id , firstName) {
-  if (confirm('Are you sure you want to delete ' + firstName + "'s profile ?")) {
-    localStorage.setItem('data', JSON.stringify(localData().filter(contact => contact.id != id)));
-    location.reload();
-  }
+function deleteContact(id) {
+  localStorage.setItem('data', JSON.stringify(localData().filter(contact => contact.id != id)));
+  location.reload();
+  
 }
 
 //Read Data From LocalStorage
