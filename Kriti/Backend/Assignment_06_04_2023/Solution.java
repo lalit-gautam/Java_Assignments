@@ -1,6 +1,6 @@
 package Assignment_06_04_2023;
 
-import java.util.Arrays;
+
 import java.util.Comparator;
 import java.util.PriorityQueue;
 
@@ -30,20 +30,16 @@ class Solution {
         parent = pq.poll();
         tempNodeIterator = parent;
         System.out.println("=====");
-        while(pq.size()>0){
-        tempNode = pq.poll();
-        System.out.print(tempNode+"  ");
-        tempNodeIterator.next = tempNode;
-        tempNodeIterator = tempNodeIterator.next;
-        }
-        
-        System.out.println();
-        for(int i=0;i<10;i++){
-            System.out.print(parent + " ");
-            parent = parent.next;
+        while (pq.size() > 0) {
+            tempNode = pq.poll();
+            tempNode.next = null;
+            System.out.print(tempNode + "  ");
+            tempNodeIterator.next = tempNode;
+            tempNodeIterator = tempNodeIterator.next;
+            
         }
 
-        // printNode(parent);
+        printNode(parent);
 
     }
 
@@ -63,9 +59,9 @@ class Solution {
         n.next = new ListNode(num);
     }
 
-    public static void printNode(ListNode n) {
+    public static void printNode(ListNode node) {
         System.out.println();
-        // ListNode n = node;
+        ListNode n = node;
         while (n != null) {
             System.out.print(n + " ");
             n = n.next;
