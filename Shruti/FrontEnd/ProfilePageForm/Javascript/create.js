@@ -9,7 +9,6 @@ function checkForm() {
 
     if (canSubmit) {
         addOrUpdateContact();
-
     } else {
         $(document).ready(function () {
             $("#submitButton").click(function () {
@@ -29,10 +28,7 @@ let localData = () => {
 }
 function getAllData() {
 
-    let nameRegex = ""
-
     let f_name = document.getElementById("first-name").value;
-
     let l_Name = document.getElementById("last-name").value;
     let n_Name = document.getElementById("nick-name").value;
     let mob_No = document.getElementById("mob-no").value;

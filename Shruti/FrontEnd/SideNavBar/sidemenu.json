@@ -1,0 +1,29 @@
+[
+    {
+        "menu": "Dashboard",
+        "submenu":[
+                {
+                "menu": "My profile",
+                "submenu": "Rewards"
+                }
+            ]
+    },
+    {
+        "menu": "Services",
+        "submenu":[
+                {
+                "menu": "App Design",
+                "submenu": "Web Design"
+                }
+            ]
+    },
+    {
+        "menu": "Resources"
+    },
+    {
+        "menu": "About Us"
+    },
+    {
+        "menu": "Contact Us"
+    }
+]

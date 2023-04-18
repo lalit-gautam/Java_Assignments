@@ -142,11 +142,11 @@ let datas = [
 
 //doubt
 //Give the employee details whose name starts with "J" and put Mr. in their names
-// let arrayOfnames = datas.filter(employee => employee.name.startsWith("J")).map(employee => employee.name.split(" "));
-// arrayOfnames.forEach(name => {
-//     name.splice(0, 0, 'MR')
-//     console.log(name);
-// })
+let arrayOfnames = datas.filter(employee => employee.name.startsWith("J")).map(employee => employee.name.split(" "));
+arrayOfnames.forEach(name => {
+    name.splice(1, 1, 'MR')
+    console.log(name);
+})
 
 // let arrOfnames = datas.filter(employee => employee.name.startsWith("J")).map(employee =>"Mr. " +  employee.name);
 // arrOfnames.forEach(name => {
@@ -158,18 +158,31 @@ let datas = [
 //      employee.salary).reduce((prev, curr) => prev + curr));
 
 //Group employees by their count in particular position in a particular year
-let distinctPositions = [...new Set(datas.map(employee => employee.position))];
-console.log(distinctPositions);
+// let distinctPositions = [...new Set(datas.map(employee => employee.position))];
+// console.log(distinctPositions);
 
-let distinctYears = [...new Set(datas.map(employee => employee.hireDate.split("-")[0]))];
-console.log(distinctYears);
+// let distinctYears = [...new Set(datas.map(employee => employee.hireDate.split("-")[0]))];
+// console.log(distinctYears);
 
-distinctPositions.forEach(team => {
-    distinctYears.forEach(year => {
-        let employeePerPosition = datas.filter(employee => employee.hireDate.split("-")[0] == year && employee.position == team);
-        if(employeePerPosition.length){
-        console.log(`${year} = ${employeePerPosition.length} employees in ${team} position`);
-        }
-    })
-    console.log();
-})
+// distinctPositions.forEach(team => {
+//     distinctYears.forEach(year => {
+//         let employeePerPosition = datas.filter(employee => employee.hireDate.split("-")[0] == year && employee.position == team);
+//         if(employeePerPosition.length){
+//         console.log(`${year} = ${employeePerPosition.length} employees in ${team} position`);
+//         }
+//     })
+//     console.log();
+// })
+
+let salaries = datas.map(emp => emp.salary);
+console.log(salaries);
+let maxSalary = salaries.reduce((prev, curr) => {
+    let max = curr
+    if(prev > curr){
+        max = prev;
+    }
+    return max;
+}
+)
+console.log(maxSalary);
+
