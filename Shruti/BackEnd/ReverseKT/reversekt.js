@@ -107,7 +107,7 @@ let datas = [
 ]
 
 //Sum of Salary
-// console.log(datas.map(employee => employee.salary).reduce((prev, curr)=> prev + curr)); 
+console.log(datas.map(employee => employee.salary).reduce((prev, curr)=> prev + curr)); 
 
 // let salaries = datas.map(employee => employee.salary);
 // let sum = 0;
@@ -136,16 +136,16 @@ let datas = [
 //Find all the employees who have joined in 2021
 // console.log(datas.filter(employee => employee.hireDate.startsWith("2021")).map(employee => `${employee.name} joined on ${employee.hireDate} `));
 
-console.log(datas.filter(employee => new Date(employee.hireDate).getFullYear() == 2021).map(employee => employee.name));
+// console.log(datas.filter(employee => new Date(employee.hireDate).getFullYear() == 2021).map(employee => employee.name));
 
-console.log(datas.filter(employee => employee.hireDate.split("-")[0].includes("2021")).map(employee => employee.name));
+// console.log(datas.filter(employee => employee.hireDate.split("-")[0].includes("2021")).map(employee => employee.name));
 
 
-//Find all the employees who's name starts with vowel
-console.log(datas.filter(emp => "aeiou".includes(emp.name.toLowerCase().charAt(0))).map(emp => emp.name));
+// //Find all the employees who's name starts with vowel
+// console.log(datas.filter(emp => "aeiou".includes(emp.name.toLowerCase().charAt(0))).map(emp => emp.name));
 
-console.log(datas.filter(emp => emp.name.toLowerCase().charAt(0) == "a" || emp.name.toLowerCase().charAt(0) == "e" || 
-emp.name.toLowerCase().charAt(0) == "i" || emp.name.toLowerCase().charAt(0) == "o" || emp.name.toLowerCase().charAt(0) == "u").map(emp => emp.name));
+// console.log(datas.filter(emp => emp.name.toLowerCase().charAt(0) == "a" || emp.name.toLowerCase().charAt(0) == "e" || 
+// emp.name.toLowerCase().charAt(0) == "i" || emp.name.toLowerCase().charAt(0) == "o" || emp.name.toLowerCase().charAt(0) == "u").map(emp => emp.name));
 
-console.log(datas.map(employee => employee.name.split("")).filter(employee =>"aeiou".includes(employee[0].toLowerCase())).map(emp => emp.join("")));
+// console.log(datas.map(employee => employee.name.split("")).filter(employee =>"aeiou".includes(employee[0].toLowerCase())).map(emp => emp.join("")));
 

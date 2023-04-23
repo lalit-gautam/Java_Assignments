@@ -1,0 +1,118 @@
+[
+    {
+        "name": "Sushant kumar Rout",
+        "position": "Software Engineer",
+        "salary": 80000,
+        "hireDate": "2022-01-01",
+        "Colleagues":[ {
+                    "name": "Hemendra Sethi",
+                    "position": "UI/UX Designer",
+                    "salary": 60000,
+                    "hireDate": "2021-07-15",
+                    "manager": null
+                },{
+                    "name": "Shrutismita Mishra",
+                    "position": "Back-end Developer",
+                    "salary": 85000,
+                    "hireDate": "2022-02-01",
+                    "manager": "John Doe"
+                }]
+    },    
+    {
+        "name": "Hemendra Sethi",
+        "position": "UI/UX Designer",
+        "salary": 60000,
+        "hireDate": "2021-07-15",
+        "manager": null
+    },
+    {
+        "name": "Sivani Tripathy",
+        "position": "Data Analyst",
+        "salary": 75000,
+        "hireDate": "2021-09-01",
+        "manager":{
+            "name": "Sidhharth",
+            "position": "Front-end Developer",
+            "salary": 70000,
+            "hireDate": "2021-08-01",
+            "manager": null
+            }
+    },
+    {
+        "name": "Sidhharth",
+        "position": "Front-end Developer",
+        "salary": 70000,
+        "hireDate": "2021-08-01",
+        "manager": null
+    },
+    {
+        "name": "Shrutismita Mishra",
+        "position": "Back-end Developer",
+        "salary": 85000,
+        "hireDate": "2022-02-01",
+        "manager": "John Doe"
+    },
+    {
+        "name": "Grace Wang",
+        "position": "Product Manager",
+        "salary": 90000,
+        "hireDate": "2022-03-01",
+        "manager": "Eva Chen"
+    },
+    {
+        "name": "David Zhang",
+        "position": "Software Engineer",
+        "salary": 75000,
+        "hireDate": "2022-01-15",
+        "manager": "Jane Smith"
+    },
+    {
+        "name": "Olivia Liu",
+        "position": "UI/UX Designer",
+        "salary": 65000,
+        "hireDate": "2021-10-01",
+        "manager": "Mike Johnson"
+    },
+    {
+        "name": "James Wang",
+        "position": "Front-end Developer",
+        "salary": 70000,
+        "hireDate": "2021-11-01",
+        "manager": "Eva Chen"
+    },
+    {
+        "name": "Sophie Wu",
+        "position": "Back-end Developer",
+        "salary": 85000,
+        "hireDate": "2022-02-15",
+        "manager": "John Doe"
+    },
+    {
+        "name": "Daniel Li",
+        "position": "Software Engineer",
+        "salary": 75000,
+        "hireDate": "2022-01-30",
+        "manager": "Jane Smith"
+    },
+    {
+        "name": "Mia Liu",
+        "position": "UI/UX Designer",
+        "salary": 65000,
+        "hireDate": "2021-10-15",
+        "manager": "Mike Johnson"
+    },
+    {
+        "name": "Emily Wang",
+        "position": "Front-end Developer",
+        "salary": 70000,
+        "hireDate": "2021-11-15",
+        "manager": "John Doe"
+    },
+    {
+        "name": "Jason Chen",
+        "position": "Back-end Developer",
+        "salary": 85000,
+        "hireDate": "2022-03-15",
+        "manager": "John Doe"
+    }
+]
