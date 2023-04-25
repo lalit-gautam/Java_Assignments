@@ -1,0 +1,76 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+Wancho&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family:'Poppins', sans-serif;
+    box-sizing: border-box;
+}
+
+.sidebar{
+    position: fixed;
+    width: 250px;
+    height: 100%;
+    left:0;
+    background-color: rgb(72, 134, 201);
+}
+
+.sidebar .heading{
+    font-size: 20px;
+    color: rgb(225, 223, 223);
+    background-color: rgb(45, 103, 166);
+    text-align: center;
+    line-height: 65px;
+}
+.sidebar ul{
+   list-style: none;
+}
+
+.sidebar ul li{
+    line-height: 60px;
+    position: relative;
+}
+.sidebar ul li a{
+    text-decoration: none;
+    color: white;
+}
+.active{
+    display: block;
+}
+.active .fas{
+    transform:rotate(90deg);
+    transition: all .2s ease;
+}
+.fa{
+    color: white;
+    margin-right: 10px;
+}
+.subUl{
+    display:none;
+    padding-left: 40px;
+    background-color: rgb(69, 129, 193);
+    transition: 0.5s ease-in-out; 
+}
+.subUl.open{
+    display: block;
+    background-color: rgb(69, 129, 193);
+    transition: 0.5s ease-in-out; 
+}
+.fas{
+    position: absolute;
+    right:5px;
+    top: 21px;
+}
+.section{
+    position: absolute;
+    left:300px;
+}
+.ulMenu .li-div{
+    padding-left: 30px;
+}
+.ulMenu .li-div:hover{
+    background-color: rgb(91, 148, 208);
+}
+.subul .li-div:hover{
+    background-color: rgb(91, 148, 208);
+}
